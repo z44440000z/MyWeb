@@ -1,0 +1,313 @@
+html,
+body {
+	height: 100%;
+
+}
+
+/*============================================================================
+
+	header
+
+============================================================================*/
+header h1 {
+	top: -136px;
+}
+
+.header_info {
+	top: 17px;
+	left: 0;
+	right: auto;
+}
+
+
+/*============================================================================
+
+	#mainvisual
+
+============================================================================*/
+
+#mainvisual {
+	background-size: cover;
+}
+
+@media screen and (max-width:640px) {
+	#mainvisual {
+		max-height: 80%;
+	}
+}
+
+
+/*============================================================================
+
+	footer
+
+============================================================================*/
+
+footer {
+	background: #fff;
+}
+
+.footer_right {
+	border: none;
+	box-shadow: none;
+}
+
+.top_blog {
+	display: block;
+}
+
+.footer_map {
+	display: block;
+}
+
+.footer_info02 {
+	display: block;
+}
+
+/*============================================================================
+
+	#lorder
+
+============================================================================*/
+
+
+
+
+
+#loader-bg {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: #000;
+	z-index: 9999999;
+	animation: loading2 1s 1 forwards;
+	-webkit-animation: loading2 1s 1 forwards;
+	animation-delay: 1.5s;
+}
+
+#loader {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 60px;
+	height: 54px;
+	margin-top: -54px;
+	text-align: center;
+}
+
+#loader .load01 {
+	position: absolute;
+	top: 0;
+	animation: loading1 1.5s infinite linear;
+	-webkit-animation: loading1 1.5s infinite linear;
+}
+
+#loader .load03 {
+	text-align: center;
+	font-size: 19px;
+	margin-top: 65px;
+	font-family: 'Satisfy', cursive;
+	font-weight: 400;
+	margin-left: -2px;
+	font-style: normal;
+	color: #fff;
+}
+
+/*#loader-bg:before{
+	background:rgba(65,167,222,0.7);
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	margin:auto;
+	content:"";
+	 z-index: 99999999;
+	 opacity:0;
+	 animation: loading3 0.5s 1 linear forwards;
+	-webkit-animation: loading3 0.5s 1 linear forwards;
+}*/
+
+
+@keyframes loading {
+	0% {}
+
+	50% {
+		top: 10px;
+	}
+
+	100% {
+		top: 0;
+
+	}
+}
+
+@-webkit-keyframes loading {
+	0% {}
+
+	50% {
+		top: 10px;
+	}
+
+	100% {
+		top: 0;
+
+	}
+}
+
+@keyframes loading1 {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes loading1 {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+@keyframes loading2 {
+	0% {
+		opacity: 1;
+		top: 0;
+	}
+
+	100% {
+		opacity: 0;
+		top: 60%;
+
+	}
+
+}
+
+@-webkit-keyframes loading2 {
+	0% {
+		opacity: 1;
+		top: 0;
+	}
+
+	100% {
+		opacity: 0;
+		top: 60%;
+
+	}
+}
+
+
+/*============================================================================
+
+	news
+
+============================================================================*/
+
+.news_text {
+	width: 327px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+
+/*============================================================================
+
+	ãƒ–ãƒ­ã‚°æ–°ç€è¨˜äº‹
+
+============================================================================*/
+
+
+
+.blog_information {
+	display: inline-block;
+}
+
+
+@media screen and (max-width:640px) {
+
+	.top_blog {
+		padding: 30px 5% 50px;
+	}
+
+	.blog_load {
+		width: auto;
+		height: 399px;
+	}
+
+	.blog_information {
+		display: block;
+		padding: 5% 2%;
+		height: 133px;
+		width: auto;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.blog_information:nth-child(1) {
+		border-top: 1px solid #ccc;
+	}
+
+	.blog_information:nth-child(even):before {
+		display: none;
+	}
+
+	.blog_information:nth-child(even):after {
+		display: none;
+	}
+
+	.blog_information a dd {
+		width: 60%;
+	}
+
+	.blog_information a dd p.blog_date {
+		font-size: 4vmin;
+	}
+
+	.blog_information a dd h4 {
+		font-size: 4vmin;
+		width: auto;
+	}
+
+	.blog_information a dd p {
+		font-size: 2.5vmin;
+	}
+
+	.blog02,
+	.blog03 {
+		padding: 2%;
+		height: auto;
+		border-bottom: none;
+	}
+
+	.blog02:nth-child(1) {
+		border-top: none;
+	}
+
+	.blog03:nth-child(1) {
+		border-top: none;
+	}
+
+	.blog02 a dd,
+	.blog03 a dd {
+		width: auto;
+	}
+
+	.blog02 a dd p.blog_date,
+	.blog03 a dd p.blog_date {
+		float: none;
+	}
+}

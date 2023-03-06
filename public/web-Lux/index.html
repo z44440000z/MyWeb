@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="ja">
+<!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+  <meta charset="utf-8">
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>Lux</title>
+  <meta property="og:url" content="http://www.moc2718.com/ntuanet/10926103/web-Lux/index.html" />
+  <meta property="og:title" content="LUX" />
+  <meta property="og:image" content="http://www.moc2718.com/ntuanet/10926103/web-Lux/images/unnamed.png" />
+  <meta property="og:description" content="LUX遊戲官網" />
+  <!-- InstanceEndEditable -->
+
+  <meta name="viewport" content="width=device-width,user-scalable=yes" />
+  <!--[if lt IE 9]>
+<script
+src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/sp_common.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/sp.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/print.css" media="all" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N63LK2T');</script>
+  <!-- End Google Tag Manager -->
+
+  <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="js/pagetop.js"></script>
+  <script type="text/javascript" src="js/heightLine.js"></script>
+  <script type="text/javascript" src="js/rollover.js"></script>
+  <script type="text/javascript" src="js/smoothScroll.js"></script>
+  <script type="text/javascript" src="js/fixHeader.js"></script>
+  <script type="text/javascript" src="js/slideDownNavi2.js"></script>
+  <script type="text/javascript" src="js/spMenu2.js"></script>
+  <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+
+  <script type="text/javascript">
+    var cname;
+    function openCharacter(Name) {
+      var i, x;
+      x = document.getElementsByClassName("containerTab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      $('#' + Name).toggle("normal");
+    }
+  </script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Satisfy" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
+  <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?SpAEFUv2NcI%3D"
+    charset="utf-8"></script>
+  <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?A31qDEm3QM8%3D&aa=1&ab=2"
+    charset="utf-8"></script>
+
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyCBiJ0euL4MCTiJKIdauEeyzpbK027d3Fo"></script>
+  <script type="text/javascript" src="js/customGooglemaps.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.1.0/animate.css">
+
+
+
+
+  <!-- InstanceBeginEditable name="head" -->
+  <link rel="stylesheet" type="text/css" href="css/top.css" media="all" />
+
+  <!-- お知らせの読み込み -->
+  <script type="text/javascript">
+    $(function () {
+      $(".news_text").load("news/news.php");
+    })
+  </script>
+
+  <!-- スクロールバーのjQuery -->
+
+  <link href="js/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+  <script src="js/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+
+
+  <!-- ローディングアニメーション（動きはtop.css） -->
+  <script>
+    $(function () {
+      var h = $(window).height();
+
+      $('#wrap').css('display', 'none');
+      $('#loader-bg ,#loader').height(h).css('display', 'block');
+    });
+
+    //10秒たったら強制的にロード画面を非表示
+    $(function () {
+      setTimeout('stopload()', 1000);
+    });
+
+    function stopload() {
+      $('#wrap').css('display', 'block');
+      $('#loader-bg').delay(900).fadeOut(800);
+      $('#loader').delay(600).fadeOut(300);
+    }
+  </script>
+
+
+  <!--ブログ新着記事-->
+  <script type="text/javascript">
+    $(function () {
+      $(".blog_load").load("https://sealds-dental.com/blog/ .blog_information");
+    })
+  </script>
+
+
+  <!-- MVスライド -->
+  <!-- <script type="text/javascript" src="js/backstretch.js"></script> -->
+  <script type="text/javascript">
+    if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+      $(function () {
+        $("#mainvisual").backstretch([
+          "images/main.png",
+          "images/main01.jpg",
+          "images/main03.jpg",
+          "images/main04.jpg"
+        ], { duration: 3000, fade: 1000 });
+        var index = 0;
+      });
+    }
+  </script>
+  <script type="text/javascript">
+    if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+      $(function () {
+        $("#mainvisual").backstretch([
+          "images/main.jpg",
+          "images/main_sp01.jpg",
+          "images/main_sp03.jpg",
+          "images/main_sp04.jpg"
+        ], { duration: 3000, fade: 1000 });
+        var index = 0;
+      });
+    }
+  </script>
+
+  <script type="text/javascript" src="js/catch.js"></script>
+
+
+  <!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+  <header>
+
+    <div class="inner">
+
+      <!-- ↓PC的NAV↓ -->
+      <nav>
+        <ul>
+          <li><a href="index.html"><span>首頁</span></a></li>
+          <li><a href="#worldview"><span>遊戲簡介</span></a></li>
+          <li><a href="#character"><span>角色介紹</span></a>
+            <div>
+              <a href="#Enid" onClick="openCharacter('Enid')">Enid<i class="nav_arrow"><img src="images/arrow01.png"
+                    alt=""></i></a>
+              <a href="#Lena" onClick="openCharacter('Lena')">Lena<i class="nav_arrow"><img src="images/arrow01.png"
+                    alt=""></i></a>
+              <a href="#Adela" onClick="openCharacter('Adela')">Adela<i class="nav_arrow"><img src="images/arrow01.png"
+                    alt=""></i></a>
+              <a href="#Borislav" onClick="openCharacter('Borislav')">Borislav<i class="nav_arrow"><img
+                    src="images/arrow01.png" alt=""></i></a>
+            </div>
+          </li>
+          <li><a href="#video"><span>遊玩影片</span></a></li>
+          <li><a href="#download"><span>下載</span></a></li>
+        </ul>
+      </nav>
+      <!-- ↑PC的NAV↑ -->
+
+
+    </div><!-- .inner -->
+
+  </header>
+
+
+  <!-- ↓手機的NAV↓ -->
+  <div class="sp_navi sp">
+    <!-- <h1><a href="index.html"><span><img src="images/main_logo.png" alt="LUX LOGO"/></span></a></h1> -->
+    <dl>
+      <dt><a class="sp_nav_btn"><span></span><span></span><span></span></a></dt>
+      <dd>
+        <div class="sp_navi_wrap">
+          <ul class="sp_link clearfix">
+            <li class="click_menu1"><a href="index.html"><i class="fa fa-angle-right"></i>首頁</a></li>
+            <li class="click_menu1"><a href="#worldview"><i class="fa fa-angle-right"></i>遊戲簡介</a></li>
+            <li class="click_menu2"><a href="#character"><i class="fa fa-angle-down"></i>角色介紹</a>
+              <div class="click_menu2">
+                <ul>
+                  <li><a href="#Enid" onClick="openCharacter('Enid')"><i class="fa fa-angle-right"></i>Enid</a></li>
+                  <li><a href="#Lena" onClick="openCharacter('Lena')"><i class="fa fa-angle-right"></i>Lena</a></li>
+                  <li><a href="#Adela" onClick="openCharacter('Adela')"><i class="fa fa-angle-right"></i>Adela</a></li>
+                  <li><a href="#Borislav" onClick="openCharacter('Borislav')"><i
+                        class="fa fa-angle-right"></i>Borislav</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="click_menu1"><a href="#video"><i class="fa fa-angle-right"></i>遊玩影片</a></li>
+            <li class="click_menu1"><a href="#download"><i class="fa fa-angle-right"></i>下載</a></li>
+          </ul>
+        </div><!-- .sp_navi_wrap -->
+      </dd>
+    </dl>
+  </div>
+  <!-- ↑手機的NAV↑ -->
+
+
+
+
+  <!-- InstanceBeginEditable name="worldview" -->
+  <section id="mainvisual" style="position: relative; z-index: 0;">
+    <div class="inner" style="background-image: url('images/main.png');background-position: center;">
+      <div class="mainvisual_catch">
+        <h2><img src="images/main_logo.png" alt="Lux_logo" width="50%"></h2>
+      </div><!-- .mainvisual_catch -->
+
+    </div><!-- .inner -->
+
+
+    <!-- <div class="top_news pc">
+    <h3>Clinic News<span>お知らせ</span></h3>
+      <div class="top_news_flame">
+      <div class="news_text scroll_area"></div> /* .news_text */
+      </div>
+ </div> /*.top_news */
+-->
+
+    <!--  <div class="backstretch" style="left: 0px;top: 0px;">
+  <img src="images/main.png" style="position: absolute;margin: 0px;padding: 0px;border: none;width: 100%;max-height: none;max-width: none;z-index: -999999;left: 0px;top: 0px;" class="deleteable">
+</div> -->
+
+
+  </section><!-- #mainvisual -->
+
+  <!-- InstanceEndEditable -->
+
+  <main>
+    <!-- InstanceBeginEditable name="contents" -->
+    <div id="container">
+
+      <!--   <div class="sp">
+    <div class="sp_top">
+      
+      <div class="top_news">
+      <h3>Clinic News<span>お知らせ</span></h3>
+      <div class="top_news_flame">
+      <div class="news_text scroll_area"></div> /* .news_text */
+      </div>
+      </div> /* .top_news */
+      
+    </div> /*.sp_top */
+  </div> -->
+
+
+
+      <section id="worldview" class="top_concept clearfix">
+        <!-- 
+<div class="top_greeting_img" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: scrollReveal, after: holdAnimClass"></div> -->
+
+        <div class="concept_text clearfix">
+          <div class="inner">
+
+            <div class="text01 dalay02"
+              data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal, after: holdAnimClass">
+              <h3><span>世界觀</span></h3>
+              <img src="images/Scene1.png" class="img_fr" alt="場景1">
+              <p>幾年前世界首屈一指的研究組織PacemNeon研發了能自由操作「純光」的技術，他們利用這項技術製造出了一套能依據設定的顏色不同而潛入不同顏色光線的裝備－－Noah
+                (諾亞)，以及其他設備，這些發明顛覆了整個世界，許多因此而立的法條相繼出現，僅有少部分的人被許可持有相關設備，這些人被統稱為Lumi。
+                <br>
+                全世界所有地區也限制了區域內的純光分布，以及相關使用條例。但PacemNeon的技術仍然悄悄流出了，漸漸有越來越多非法使用設備的人出現，他們使用與Lumi不同的色光，並試圖擴張其純光的分布範圍，政府為了避免純光平衡遭打破，要求Lumi解決所有非法的純光使用行為，Lumi與那些非法者的爭鬥因而展開。
+              </p>
+            </div>
+          </div>
+
+        </div><!-- .inner -->
+    </div><!-- .concept_text -->
+
+    </section><!-- .top_concept -->
+
+
+
+    <section id="character" class="top_points">
+
+      <div class="inner">
+        <h3><span>角色介紹</span></h3>
+      </div><!-- .inner -->
+
+      <div class="top_point_list clearfix">
+
+        <a data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal, after: holdAnimClass"
+          class="dalay01" href="javascript:openCharacter('Enid')">
+          <dl>
+            <dt></dt>
+            <dd>
+              <h4>Enid</h4>
+              <!-- <p class="more">More</p> -->
+            </dd>
+          </dl>
+        </a>
+
+        <a data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal, after: holdAnimClass"
+          class="dalay02" href="javascript:openCharacter('Lena')">
+          <dl>
+            <dt></dt>
+            <dd>
+              <h4>Lena</h4>
+              <!-- <p class="more">More</p> -->
+            </dd>
+          </dl>
+        </a>
+        <!-- href="points.html#link03" -->
+        <a data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal, after: holdAnimClass"
+          class="dalay03" href="javascript:openCharacter('Adela')">
+          <dl>
+            <dt></dt>
+            <dd>
+              <h4>Adela</h4>
+              <!-- <p class="more">More</p> -->
+            </dd>
+          </dl>
+        </a>
+
+        <a data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal, after: holdAnimClass"
+          class="dalay04" href="javascript:openCharacter('Borislav')">
+          <dl>
+            <dt></dt>
+            <dd>
+              <h4>Borislav</h4>
+              <!-- <p class="more">More</p> -->
+            </dd>
+          </dl>
+        </a>
+
+
+      </div><!-- .top_point_list -->
+
+
+      <!-- Full-width columns: (hidden by default) -->
+      <div id="Enid" class="containerTab" style="display:none;background:#ffb000">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2 style="font-size: 30px;">Enid</h2>
+        <p>22歲的年輕女孩，平時不太喜歡開口說話，與團隊交流時通常Adela能理解她的想法進而幫她發言，因此對Adela有依賴感。出身於混亂的南區，具有看透並了解一切本質的能力，在各項技術上都有很高的成就。<br><br>
+          原本是在PacemNeon裡的開發團隊工作，Lumi成軍時，政府在全國各地召集具有非凡能力的人加入，Enid在當時就被挖掘並加入團隊中的技術組。在政府組織Noah秘密戰術小隊時與Adela相識，爾後兩人變成好友關係，Enid加入Lumi後兩人距離更加靠近，雖然Enid依然不太愛說話，但Adela漸漸的能抓到她所想表達的意思。
+        </p>
+      </div>
+
+      <div id="Lena" class="containerTab" style="display:none;background:#9b6caf">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2 style="font-size: 30px;">Lena</h2>
+        <p>
+          受到朋友的影響而加入組織，戰鬥時與其說是對組織的忠誠，不如說是對過去的遺憾感到憤恨。年少時政府軍透過憑空捏造的理由攻陷家鄉，點燃了長達3年的戰爭，最後家鄉終於因資源消耗殆盡而戰敗滅亡。個性懦弱的她平時對於戰爭與政府感到恐懼，也不擅長與他人相處，但一旦握起武器面對政府時，憤怒與仇恨便會佔據內心。<br><br>
+          15歲時遇到一名在街上遊蕩的少年，彼此年紀只有一兩歲的差異，很能理解對方的想法，當時的少年也對於軍方的思想腐敗感到不滿，兩人快速的成為朋友，然而某天少年便音訊全無，一個能讓自己推心置腹的友人在短短一夜間消失於世界上，讓少女內心的安全感快速崩解。<br><br>
+          後來得知少年可能是遭到政府綁架，進而加深對政府的憎恨，因此加入了組織，並被推選為Noah的戰鬥員。
+        </p>
+      </div>
+
+      <div id="Adela" class="containerTab" style="display:none;background:#bb1b1c">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2 style="font-size: 30px;">Adela</h2>
+        <p>原本隸屬政府內部的機密防衛小組組員。Noah正式公布於外界以前政府便召集少數菁英份子，抹滅他們的存在紀錄，編組成一支使用Noah的秘密戰術小隊，也就是現在的Lumi的前身。<br><br>
+          後來PacemNeon的技術外流，創造出了一支潛在社會陰暗面的組織，他們利用這項技術建立了屬於自己的地下社會，政府的高層得知後立刻要求Adela所屬的小隊去消滅他們，這場戰鬥的後續在歷史上不具有任何的紀錄，但自此之後Noah的存在便被攤開於陽光之下，政府告訴社會這是一項新興的技術，並為他設下多項法規、建立Lumi以遏阻高層掌握之外的人持相關設備，Adela理所當然地被列入Lumi的隊伍之中。<br><br>
+          個性爽朗同時也很溫柔，在隊伍裡總是扮演著姊姊的角色，但對於自己過去的事情很少提及，只會說自己以前是公務員，繁忙的工作讓她一直沒有機會去認識帥哥，自己又很排斥辦公室戀情，所以到了這個年紀還沒有一個可以稱之為老公的男人。每每提及結婚一事她便會露出苦笑無奈的神情。
+        </p>
+      </div>
+
+      <div id="Borislav" class="containerTab" style="display:none;background:#657bac">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2 style="font-size: 30px;">Borislav</h2>
+        <p>
+          原職業軍人，至年少時期便進入軍隊受訓，以堅毅的意志與強韌的肉體聞名，在多年前一場戰役中立下大功，就此成名於軍中。與Adela同期以軍官的身分受召加入Noah的秘密戰術小隊，有絕對的榮譽感與正義感，對於隊友有一定的信任感，戰鬥時會用非常認真的態度面對，私下會細心照顧後輩，算是個溫柔的人。<br><br>
+          家庭背景單純，娶有一妻且生有二子，其中最小的孩子在出生後不久便離世，葬於北部的城鎮裡，幾個月後該城鎮因叛亂而毀滅。
+        </p>
+      </div>
+
+    </section><!-- .top_points -->
+
+
+
+    <section id="video" class="top_medical">
+      <div class="inner">
+        <h3><span>遊玩影片</span></h3>
+        <div class="text01 dalay02 fadeInLeft animated" if: scroll, on: window, do: fadeInLeft animated, before:
+          scrollReveal, after: holdAnimClass>
+          <div class="video-half">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2CTCKIkWgqw" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video-half">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6JPxw6XGgbQ" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div><!-- .inner -->
+    </section><!-- .top_medical -->
+
+    <section id="download" class="top_medical">
+      <div class="inner">
+        <h3><span>下載</span></h3>
+        <div>
+          <a href="File/Lux.zip" download class="button scrolly">下載檔案</a>
+        </div>
+      </div><!-- .inner -->
+    </section><!-- .top_medical -->
+
+    </div><!-- #container -->
+
+
+    <div id="loader-bg">
+      <div id="loader">
+        <p class="load01"><img src="images/load.png" alt="lording" /></p>
+        <p class="load03">Loading…</p>
+      </div>
+
+    </div>
+    <!-- InstanceEndEditable -->
+  </main>
+
+
+
+
+  <footer>
+    <div class="footer_info">
+    </div><!-- .footer_info -->
+
+
+    <div class="pagetop">
+      <img src="images/pagetop.png" alt="pagetop" style="width: 100%;">
+    </div>
+
+    <p class="copy"><small>&copy; Lux</small></p>
+  </footer>
+
+  <!-- Googleアナリティクスここから -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115384152-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115384152-1');
+  </script>
+
+  <!-- Googleアナリティクスここまで -->
+
+  <script src="js/anijs-min.js"></script>
+  <script src="js/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N63LK2T" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</body>
+<!-- InstanceEnd -->
+
+</html>

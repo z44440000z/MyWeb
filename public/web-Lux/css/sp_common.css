@@ -1,0 +1,89 @@
+/* CSS Document */
+
+.pc{
+	display:block !important;
+}
+.sp{
+	display: none !important;
+}
+.pc_inline{
+	display:inline !important;
+}
+.sp_inline{
+	display:none !important;
+}
+.sp_inline_ip{
+	display:none !important;
+}
+.pc_table{
+	display:none !important;
+}
+.sp_table{
+	display:none !important;
+}
+
+@media screen and (max-width:640px) {
+
+.pc{
+	display:none !important;
+}
+.sp{
+	display:block !important;
+}
+.pc_inline{
+	display:none !important;
+}
+.sp_inline{
+	display:inline !important;
+}
+
+.pc_table{
+	display:table !important;
+}
+.sp_table{
+	display:table !important;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+.sp_mb00{
+	margin-bottom:0 !important;
+}
+.sp_mr00{
+	margin-right:0 !important;
+}
+.sp_ml00{
+	margin-left:0 !important;
+}
+.sp_mt00{
+	margin-top:0 !important;
+}
+.sp_pb00{
+	padding-bottom:0 !important;
+}
+.sp_pr00{
+	padding-right:0 !important;
+}
+.sp_pl00{
+	padding-left:0 !important;
+}
+.sp_pt00{
+	padding-top:0 !important;
+}
+.sp_center{
+	text-align:center;
+}
+
+}
+
+/* ä¸»ã«iPhone5,iPhoneSEç”¨ */
+@media screen and (max-width:320px) {
+
+.sp_inline_iP{
+	display:inline !important;
+}
+
+}
