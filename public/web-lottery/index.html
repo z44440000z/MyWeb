@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日抽籤</title>
+
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-1.5.2rc1.js"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/animate.js"></script>
+</head>
+
+<body>
+
+  <h1>好運籤筒</h1>
+
+  <p>點擊籤筒搖一搖</p>
+
+  <div id="mydiv">
+    <img id="img" src="Image/lottery.png" alt="lottery" width="200px">
+  </div>
+
+  <div id="mydiv">
+    <select onfocus='this.size=7;' onblur='this.size=1;' onchange='this.size=1; this.blur();' name="Location"
+      id="myselect" class="dropbtn" style="margin-top: 30px;">
+      <option>請選擇你所在的縣市</option>
+    </select>
+  </div>
+
+  <script>
+    function show() {
+      window.location.assign("result.html");
+    };
+  </script>
+  <script>
+
+  </script>
+</body>
+
+</html>

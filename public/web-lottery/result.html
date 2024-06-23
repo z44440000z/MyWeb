@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>每日抽籤</title>
+
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-1.5.2rc1.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <h1 id="today_txt"></h1>
+  <div style="height: 300px; text-align: center;">
+    <img id="today_img" src="" alt="lottery">
+  </div>
+
+  <div>
+    <h3>今日天氣</h3>
+    <pre id="weather"></pre>
+    <pre id="lunch"></pre>
+  </div>
+  <div>
+    <img id="return" src="Image\return.png">
+  </div>
+</body>
+<script>
+  $(today_img).load(function () {
+    $('#today_img').animate({ width: '200px' });
+  })
+
+  $('#return').mousedown(function () {
+    $('#return').attr("src", "Image/return_on.png");
+  })
+
+  $('#return').click(function () {
+    history.back();
+  })
+</script>
+
+</html>

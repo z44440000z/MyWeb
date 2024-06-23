@@ -1,0 +1,67 @@
+{
+    "myLocation": 1,
+    "data": [
+        {
+            "Sign": "大吉",
+            "Image": "大吉.png"
+        },
+        {
+            "Sign": "大凶",
+            "Image": "大凶.png"
+        },
+        {
+            "Sign": "吉",
+            "Image": "吉.png"
+        },
+        {
+            "Sign": "小吉",
+            "Image": "小吉.png"
+        },
+        {
+            "Sign": "末吉",
+            "Image": "末吉.png"
+        },
+        {
+            "Sign": "凶",
+            "Image": "凶.png"
+        },
+        {
+            "Sign": "中吉",
+            "Image": "中吉.png"
+        }
+    ],
+    "lunch": [
+        {
+            "content": "早餐店"
+        },
+        {
+            "content": "麥當勞"
+        },
+        {
+            "content": "摩斯漢堡"
+        },
+        {
+            "content": "711"
+        },
+        {
+            "content": "泡麵"
+        }
+    ],
+    "facemood": [
+        {
+            "content": "d(`･∀･)b"
+        },
+        {
+            "content": "(っ●ω●)っ"
+        },
+        {
+            "content": "ᕕ ( ᐛ ) ᕗ"
+        },
+        {
+            "content": "(﹥∀･)b"
+        },
+        {
+            "content": "(ﾉ>ω<)ﾉ"
+        }
+    ]
+}
