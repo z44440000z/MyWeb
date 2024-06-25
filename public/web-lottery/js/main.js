@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 
 //天氣
-var url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-C0C3AC7F-DAC6-48F1-9F5D-F98ADC7B5B97"
+var url = "https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWA-A2DDCDDA-B62C-420D-90E4-05E0E6D9C447"
 var loca = localStorage.getItem('myLocation');;
 var Wx = 0;
 var PoP = 1;
@@ -38,11 +38,11 @@ $.getJSON(url).done(function (result) {
     result.records.location.map(function (data) {
         if (loca != null) {
             if (result.records.location[loca] == data) {
-                $('#myselect').append('<option selected="selected" value="' + data.locationName + '">' + data.locationName + '</option>');
+                $('#myselect').append('<option selected="selected" value="' + data.locationName + '">' + data.locationName  + '</option>');
             }
-            else { $('#myselect').append('<option value="' + data.locationName + '">' + data.locationName + '</option>'); }
+            else { $('#myselect').append('<option value="' + data.locationName  + '">' + data.locationName  + '</option>'); }
         }
-        else { $('#myselect').append('<option value="' + data.locationName + '">' + data.locationName + '</option>'); }
+        else { $('#myselect').append('<option value="' + data.locationName  + '">' + data.locationName  + '</option>'); }
     })
 })
 
